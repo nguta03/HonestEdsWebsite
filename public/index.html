@@ -1,0 +1,131 @@
+<!----------------------------------------------------------------------------------
+    File Name: index.html
+    Creator: Noah Guta
+    Description: The main page in the program and the first page the user will visit.
+    It has links to the other pages and some basic information for the user.
+----------------------------------------------------------------------------------->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Honest Ed's</title> 
+        <!-- Add logo for tab -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Noah Guta">
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/fontawesome.min.css" integrity="sha384-z4tVnCr80ZcL0iufVdGQSUzNvJsKjEtqYZjiQrrYKlpGow+btDHDfQWkFjoaz/Zr" crossorigin="anonymous">
+        <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css" rel="stylesheet"  type='text/css'> 
+        <!-- Custom CSS End -->
+    </head>
+    <body>
+<!---------------Header----------------->
+<!-- First section that the user sees -->
+        <section class="header">
+            <nav>
+                 <a href="index.html"><img src="images/"></a> <!--Add logo image -->
+                 <div class="nav-links" id="navLinks">
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="">HOME</a></li>
+                        <li><a href="">REVIEWS</a></li>
+                        <li><a href="">ABOUT</a></li>
+                        <li><a href="">CONTACT</a></li>
+                    </ul>
+                 </div>
+                 <i class="fa fa-bars"onclick="showMenu()"></i>
+            </nav>
+            <div class="textBox">
+                <h1>Honest Ed's</h1>
+                <p>Delivering honest reviews from the legend himself.
+                </p>
+                <a href=""class="headBtn">View Reviews</a>
+            </div>
+            <!---- Javascript for mobile menu ---->
+            <script>
+                var navLinks = document.getElementById("navLinks");
+                function showMenu(){
+                    navLinks.style.right = "0";
+                }
+                function hideMenu(){
+                    navLinks.style.right = "-200px";
+                }
+            </script>
+        </section>
+
+<!------------New Reviews------------->
+<!-- 3 of the newest reviews displayed -->
+<!-- Going to be updated via Javascript -->
+        <section class="reviews">
+            <h1>Newest Reviews</h1>
+            <div class="row">
+                <div class="reviewCol1">
+                    <h2>This is the first review</h2>
+                    <h3>City,Province/Country</h3>
+                    <p>The food at unnamed restaurant was spectacular. The service was very slow though.</p>
+                    <div class="stars1">
+                        <i class="fa fa-star" ></i>
+                        <i class="fa fa-star" ></i>
+                        <i class="fa fa-star" ></i>
+                        <i class="fa fa-star" ></i>
+                        <i class="fa fa-star-half-o" ></i>
+                    </div>
+                    
+                </div>
+                <div class="reviewCol2">
+                    <h2>This is the second review</h2>
+                    <h3>City,Province/Country</h3>
+                    <p>The food at unnamed restaurant was kind mid ngl. The staff was very pleasant.</p>
+                    <div class="stars2">
+                        <i class="fa fa-star" ></i>
+                        <i class="fa fa-star" ></i>
+                        <i class="fa fa-star" ></i>
+                        <i class="fa fa-star" ></i>
+                        <i class="fa fa-star-o" ></i>
+                    </div>
+                </div>
+                <div class="reviewCol3">
+                    <h2>This is the third review</h2>
+                    <h3>City,Province/Country</h3>
+                    <p>The food at unnamed restaurant was very bad. The service was also underwhelming.</p>
+                    <div class="stars3">
+                        <i class="fa fa-star" ></i>
+                        <i class="fa fa-star-o" ></i>
+                        <i class="fa fa-star-o" ></i>
+                        <i class="fa fa-star-o" ></i>
+                        <i class="fa fa-star-o" ></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+<!-------Contact------->
+<!-- Contains a button to contact and a background image -->
+        <section class="contact">
+            <h1>Delivering Thorough And Honest Reviews</h1>
+            <a href="" class="headBtn">CONTACT US</a>
+        </section>
+
+<!-------Footer------->
+<!-- Contains a button to the about us page and icons-->
+<!-- Icons would be linked via Javascript if used-->
+        <section class="footer">
+            <h4>About Us</h4>
+            <p>
+                Sample text that talks about the creators.
+            </p>
+            <div class="icons">
+                <i class="fa fa-facebook" ></i>
+                <i class="fa fa-twitter" ></i>
+                <i class="fa fa-instagram" ></i>
+                <i class="fa fa-linkedin" ></i>
+            </div>
+            <p>Made by Noah Guta </p> <!-- Link to my personal webpage -->
+        </section>
+                
+        
+    </body>
+</html>
